@@ -1,0 +1,63 @@
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for better readability */
+}
+
+header {
+    background-color:  #9b060d; /* Blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.expert-opinions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    padding: 20px;
+    flex: 1; /* This allows the content to take the available space */
+}
+
+.opinion-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width for the cards */
+    text-align: center;
+}
+
+.opinion-card h2 {
+    margin: 10px 0 5px;
+}
+
+.opinion-card h3 {
+    color: #555; /* Gray color for subheading */
+    margin: 0 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #9b060d; /* Same blue as header */
+    color: white;
+    width: 100%;
+}

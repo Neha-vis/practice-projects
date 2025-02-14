@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Opinions</title>
+    <link rel="stylesheet" href="expert-opinions.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Top Section -->
+    <header>
+        <h1>Expert Opinions</h1>
+        <p>Insights from leading experts in various fields.</p>
+        <input type="text" id="search" placeholder="Search Expert Opinions..." onkeyup="searchOpinions()">
+    </header>
+
+    <!-- Expert Opinion Section -->
+    <section class="expert-opinions">
+        <div class="opinion-card">
+            <h2>Expert Name 1</h2>
+            <h3>Field of Expertise</h3>
+            <p>"An insightful quote or summary of their opinion on a relevant topic."</p>
+        </div>
+        <div class="opinion-card">
+            <h2>Expert Name 2</h2>
+            <h3>Field of Expertise</h3>
+            <p>"Another insightful quote or summary of their opinion."</p>
+        </div>
+        <div class="opinion-card">
+            <h2>Expert Name 3</h2>
+            <h3>Field of Expertise</h3>
+            <p>"Yet another insightful quote or summary of their opinion."</p>
+        </div>
+        <!-- Add more expert cards as needed -->
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-expert-name"></h2>
+            <h3 id="modal-expert-field"></h3>
+            <p id="modal-expert-quote"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Debate Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="expert.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

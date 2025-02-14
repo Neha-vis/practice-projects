@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Community</title>
+    <link rel="stylesheet" href="global community.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Global Community</h1>
+        <p>Connect with people from around the world and share your thoughts and ideas.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="content">
+        <h2>About Our Global Community</h2>
+        <p>
+            Our platform brings together people from different countries and backgrounds, offering a space for insightful discussions, cultural exchanges, and shared learning. Join us to engage in global conversations on a wide range of topics like technology, education, culture, and social issues.
+        </p>
+
+        <!-- Discussion Areas -->
+        <div class="discussion-area">
+            <div class="discussion-topic">
+                <h3>Technology Innovations</h3>
+                <p>Discuss the latest in global technology trends and innovations.</p>
+                <button onclick="goToPage('technology')">Join Discussion</button>
+            </div>
+            <div class="discussion-topic">
+                <h3>Education Around the World</h3>
+                <p>Share insights about the different educational systems and practices.</p>
+                <button onclick="goToPage('education')">Join Discussion</button>
+            </div>
+            <div class="discussion-topic">
+                <h3>Cultural Exchanges</h3>
+                <p>Engage in conversations about cultural experiences and traditions.</p>
+                <button onclick="goToPage('culture')">Join Discussion</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Global Community Platform. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goToPage(topic) {
+            alert("Redirecting to the " + topic + " discussion page.");
+            // Implement redirection to the specific discussion pages
+        }
+    </script>
+
+</body>
+</html>

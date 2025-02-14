@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Discussions</title>
+    <link rel="stylesheet" href="live-discussions.css">
+</head>
+<body>
+    <div id="usernameSection">
+        <input type="text" id="usernameInput" placeholder="Enter your username">
+        <button onclick="setUsername()">Set Username</button>
+    </div>
+
+    <header>
+        <h1>Live Discussions</h1>
+        <div class="discussion-info">
+            <p>Topic: Politics</p>
+            <div id="timer">Time Left: <span id="timeLeft">15:00</span></div>
+        </div>
+    </header>
+
+    <main class="discussion-container">
+        <div class="message-container" id="message-container"></div>
+
+        <div class="user-actions">
+            <input type="text" id="messageInput" placeholder="Type a message..." oninput="showTypingIndicator()">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div id="typing-indicator" class="typing-indicator"></div>
+
+        <div class="reactions">
+            <span onclick="addReaction('👍')">👍</span>
+            <span onclick="addReaction('😂')">😂</span>
+            <span onclick="addReaction('👏')">👏</span>
+            <span onclick="addReaction('🎉')">🎉</span>
+        </div>
+    </main>
+
+    <script src="live.js"></script>
+</body>
+</html>
