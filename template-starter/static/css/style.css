@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+
+/* Header */
+.header .nav {
+  background-color: black;
+}
+.header .nav-link {
+  color: #fff;
+}
+.header .navbar-nav .nav-link.active,
+.header .navbar-nav .nav-link.show {
+  color: #fff;
+}
+.header .btn {
+  width: 150px;
+}
+
+/* Footer */
+.footer .nav-link {
+  color: blue;
+}
+
+/* Cards */
